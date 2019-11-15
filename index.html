@@ -7,23 +7,90 @@
         <title>Galahad enterprises</title>
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="style/styles.css">
+        <link rel="stylesheet" type="text/css" href="style/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="style/slick-theme.css"/>
     </head>
 
     <body>
 
-        <div class="main-image">
+        <div class="mobile-header">
+            <div class="logo">
+                <!-- <a href="./index.html"> -->
+                    <img src="img/Logo.jpeg" alt="">
+                <!-- </a> -->
+            </div>
+            <div class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                    width="48" height="48"
+                    viewBox="0 0 172 172"
+                    style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#b91c1c"><path d="M0,14.33333v14.33333h172v-14.33333zM0,78.83333v14.33333h172v-14.33333zM0,143.33333v14.33333h172v-14.33333z"></path></g></g>
+                </svg>
+            </div>
+            
+        </div>
+
+        <div class="slider">
+
+            <div class="all-slides">
+
+                <div class="slide1">
+                    <div class="slider-image">
+                        <div class="nav-wrapper">
+                            <div class="nav1 current"></div>
+                            <div class="nav2 next-stage"></div>
+                            <div class="nav3 next-stage"></div>
+                            <div class="nav4 next-stage"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide2">
+                    <div class="slider-image">
+                        <div class="nav-wrapper">
+                            <div class="nav1 next-stage"></div>
+                            <div class="nav2 current"></div>
+                            <div class="nav3 next-stage"></div>
+                            <div class="nav4 next-stage"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide3">
+                    <div class="slider-image">
+                        <div class="nav-wrapper">
+                            <div class="nav1 next-stage"></div>
+                            <div class="nav2 next-stage"></div>
+                            <div class="nav3 current"></div>
+                            <div class="nav4 next-stage"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide4">
+                    <div class="slider-image">
+                        <div class="nav-wrapper">
+                            <div class="nav1 next-stage"></div>
+                            <div class="nav2 next-stage"></div>
+                            <div class="nav3 next-stage"></div>
+                            <div class="nav4 current"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
 
         <div class="logo-area">
 
-            <div class="logo-lines" style="width: 21%;">
+            <div class="logo-lines" id="first-logo-lines">
                 <div class="line"></div>
                 <div class="line"></div>
             </div>
 
             <div class="logo">
                 <a href="./index.html">
-                    <img src="img/logo.jfif" alt="">
+                    <img src="img/Logo.jpeg" alt="">
                 </a>
             </div>
 
@@ -36,12 +103,41 @@
         
         <div class="main-wrapper">
 
-            <div class="menu">
+            <div class="mobile_menu inactive">
+                <div class="close_menu_icon" onclick="closeMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                        width="32" height="32"
+                        viewBox="0 0 172 172"
+                        style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M29.5625,21.96192l-7.60058,7.60058l3.82129,3.7793l52.61621,52.6582l-56.4375,56.4375l7.60058,7.60058l56.4375,-56.4375l52.61621,52.65821l3.82129,3.77929l7.60058,-7.60058l-3.77929,-3.82129l-52.65821,-52.61621l56.4375,-56.4375l-7.60058,-7.60058l-56.4375,56.4375l-52.6582,-52.61621z"></path></g></g>
+                    </svg>
+                </div>
                 <div class="items">
                     <div class="menu_item"><a class="activeItem" href="./index.html">ABOUT</a></div>
                     <div class="menu_item"><a href="./subsidiaries.html">SUBSIDIARIES</a></div>
                     <div class="menu_item"><a href="./investors.html">INVESTORS</a></div>
                     <div class="menu_item"><a href="./contact_us.html">CONTACT US</a></div>
+                    <div class="lang-switcher" >
+                        <img src="https://img.icons8.com/ios-glyphs/30/000000/globe-earth.png">
+                        <p onclick="chooseLang()"><a href="#" class="activeItem">EN</a></p>
+                        <p onclick="chooseLang()"><a href="#">DE</a></p>
+                    </div>                
+                </div>
+            </div>
+
+            <div class="desktop_menu">
+                <div class="items">
+                    <div class="menu_item"><a class="activeItem" href="./index.html">ABOUT</a></div>
+                    <div class="menu_item"><a href="./subsidiaries.html">SUBSIDIARIES</a></div>
+                    <div class="menu_item"><a href="./investors.html">INVESTORS</a></div>
+                    <div class="menu_item"><a href="./contact_us.html">CONTACT US</a></div>
+                    <div class="lang-switcher" >
+                        <img src="https://img.icons8.com/ios-glyphs/30/000000/globe-earth.png" onclick="openLangMenu()">
+                        <span class="current_lang" onclick="openLangMenu()">EN</span>
+                        <div class="drop-block">
+                            <p onclick="closeLangMenu()"><a href="#" class="current">EN</a></p>
+                            <p onclick="closeLangMenu()"><a href="#">DE</a></p>
+                        </div>
+                    </div>                
                 </div>
             </div>
 
@@ -52,9 +148,9 @@
                         About 
                     </h2>
                     <p>
-                        Galahad Enterprises AG была основана в 2012 году. Основной целью компании является
-                        предоставление услуг в области брокерских и финансовых технологий, а также
-                        разработка программного обеспечения. Компания зарегистрирована в кантоне Цюрих.
+                        Galahad Enterprises AG was founded in 2012. The main purpose of the company is the 
+                        development and implementation of innovative solutions in the FinTech industry. 
+                        The company is registered in the Canton of Zurich.
                     </p>
                 </div>
 
@@ -63,18 +159,18 @@
                         Mission 
                     </h2>
                     <p>
-                        Galahad Enterprises AG стремится предоставить своим деловым партнерам устойчивые и
-                        долгосрочные возможности для инвестиций в FinTech индустрии.
+                        Make the use of advanced technical solutions on blockchain technology universal 
+                        and widespread, bringing human society closer to financial freedmo. 
                     </p>
                 </div>
                 
                 <div class="text-block">
                     <h2>
-                        Vision 
+                        Goal 
                     </h2>
                     <p>
-                        Наша цель - создать портфель ведущих компаний в отрасли FinTech с охватом
-                        миллиарда клиентов.
+                        To create the next-generation digital ecosystem for enhanced socio-economic 
+                        collaboration through the use and benefit of cryptocurrecnies.
                     </p>
                 </div>
                 
@@ -86,6 +182,10 @@
             </footer>
 
         </div>
+
+        <script src="script/jquery.js"></script>
+        <script type="text/javascript" src="script/slick.js"></script>
+        <script type="text/javascript" src="script/script.js"></script>
 
     </body>
 </html>
