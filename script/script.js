@@ -46,6 +46,14 @@ $(document).ready(function () {
 
 });
 
+function openMenu() {
+    document.getElementsByClassName('mobile_menu')[0].classList.remove('inactive'); 
+}
+
+function closeMenu() {
+    document.getElementsByClassName('mobile_menu')[0].classList.add('inactive'); 
+}
+
 function openLangMenu() {
     document.getElementsByClassName('drop-block')[0].classList.add('active'); 
 }
