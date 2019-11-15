@@ -14,12 +14,12 @@
 }
 
 .mobile-header img {
-    height: 80px;
-    width: 178px;
+    height: 88px;
+    width: 196px;
 }
 
 .mobile-header .logo {
-    margin: 8px 16px;
+    margin: 4px 16px;
 }
 
 .menu-icon {
@@ -238,6 +238,21 @@ form .button:active{
     display: flex;
     justify-content: center;
     align-items: center; 
+    font-size: 32px;
+}
+
+.mobile_menu .lang-switcher {
+    margin: 40px 0;
+}
+
+.mobile_menu .lang-switcher a {
+    font-size: 32px !important;
+}
+
+.mobile_menu .lang-switcher img {
+    width: 40px;
+    height: 40px;
+    margin: auto;
 }
 
 .desktop_menu .items {
@@ -259,6 +274,14 @@ form .button:active{
     margin: auto 0;
 }
 
+@media screen and (min-width: 1024px) {
+    .mobile-header {
+        visibility: hidden;  
+        width: 0;
+        height: 0;
+    }
+}
+
 @media screen and (max-width: 1023px) {
     .desktop_menu, .desktop_menu .items, .logo-area {
         visibility: hidden;  
@@ -271,13 +294,13 @@ form .button:active{
     }
 
     h2 {
-        font-size: 28px;
-        margin-bottom: 32px !important;
+        font-size: 28px !important;
+        margin-bottom: 24px !important;
     }
 
     p {
-        font-size: 24px;
-        line-height: 32px;
+        font-size: 21px !important;
+        line-height: 32px !important
     }
 
 }
@@ -332,9 +355,9 @@ a {
 }
 
 .close_menu_icon {
-    top: 16px;
+    top: 24px;
     position: absolute;
-    right: 16px;
+    right: 24px;
 }
 
 .inactive {
@@ -353,12 +376,6 @@ a {
     height: 21px;
     margin: 1px 4px 1px 12px;
 }
-
-/* @media screen and (max-width: 1130px) {
-    .lang-switcher .text-lang {
-        display: none;
-    }
-} */
 
 .lang-switcher .current_lang {
     display: flex;
