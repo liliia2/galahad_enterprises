@@ -10,7 +10,7 @@
         <link rel="stylesheet" type="text/css" href="style/slick.css"/>
         <link rel="stylesheet" type="text/css" href="style/slick-theme.css"/>
     </head>
-    <body>
+    <body id="all_content">
 
         <div class="mobile-header">
             <div class="logo">
@@ -104,36 +104,36 @@
             <div class="mobile_menu inactive">
                 <div class="close_menu_icon" onclick="closeMenu()">
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                        width="32" height="32"
+                        width="64" height="64"
                         viewBox="0 0 172 172"
                         style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M29.5625,21.96192l-7.60058,7.60058l3.82129,3.7793l52.61621,52.6582l-56.4375,56.4375l7.60058,7.60058l56.4375,-56.4375l52.61621,52.65821l3.82129,3.77929l7.60058,-7.60058l-3.77929,-3.82129l-52.65821,-52.61621l56.4375,-56.4375l-7.60058,-7.60058l-56.4375,56.4375l-52.6582,-52.61621z"></path></g></g>
                     </svg>
                 </div>
                 <div class="items">
-                    <div class="menu_item"><a href="./index.html">ABOUT</a></div>
-                    <div class="menu_item"><a class="activeItem" href="./subsidiaries.html">SUBSIDIARIES</a></div>
-                    <div class="menu_item"><a href="./investors.html">INVESTORS</a></div>
-                    <div class="menu_item"><a href="./contact_us.html">CONTACT US</a></div>
+                    <div class="menu_item"><a id="menu_about_mobile" href="./index.html">ABOUT</a></div>
+                    <div class="menu_item"><a class="activeItem" id="menu_subsidiaries_mobile" href="./subsidiaries.html">SUBSIDIARIES</a></div>
+                    <div class="menu_item"><a id="menu_investors_mobile" href="./investors.html">INVESTORS</a></div>
+                    <div class="menu_item"><a id="menu_contactus_mobile" href="./contact_us.html">CONTACT US</a></div>
                     <div class="lang-switcher" >
                         <img src="https://img.icons8.com/ios-glyphs/30/000000/globe-earth.png">
-                        <p onclick="chooseLang()"><a href="#" class="activeItem">EN</a></p>
-                        <p onclick="chooseLang()"><a href="#">DE</a></p>
+                        <p onclick="changeLng('DE')" class="activeItem deutsch_lang">DE</p>
+                        <p onclick="changeLng('EN')" class="eng_lang">EN</p>
                     </div>                
                 </div>
             </div>
 
             <div class="desktop_menu">
                 <div class="items">
-                    <div class="menu_item"><a href="./index.html">ABOUT</a></div>
-                    <div class="menu_item"><a class="activeItem" href="./subsidiaries.html">SUBSIDIARIES</a></div>
-                    <div class="menu_item"><a href="./investors.html">INVESTORS</a></div>
-                    <div class="menu_item"><a href="./contact_us.html">CONTACT US</a></div>
+                    <div class="menu_item"><a id="menu_about_desktop" href="./index.html">ABOUT</a></div>
+                    <div class="menu_item"><a class="activeItem" id="menu_subsidiaries_desktop" href="./subsidiaries.html">SUBSIDIARIES</a></div>
+                    <div class="menu_item"><a id="menu_investors_desktop" href="./investors.html">INVESTORS</a></div>
+                    <div class="menu_item"><a id="menu_contactus_desktop" href="./contact_us.html">CONTACT US</a></div>
                     <div class="lang-switcher" >
                         <img src="https://img.icons8.com/ios-glyphs/30/000000/globe-earth.png" onclick="openLangMenu()">
-                        <span class="current_lang" onclick="openLangMenu()">EN</span>
+                        <span class="current_lang" onclick="openLangMenu()"></span>
                         <div class="drop-block">
-                            <p onclick="closeLangMenu()"><a href="#" class="current">EN</a></p>
-                            <p onclick="closeLangMenu()"><a href="#">DE</a></p>
+                            <p onclick="changeLng('DE')" class="activeItem deutsch_lang">DE</p>
+                            <p onclick="changeLng('EN')" class="eng_lang">EN</p>
                         </div>
                     </div>                
                 </div>
@@ -142,41 +142,44 @@
             <div class="content">
                 
                 <div class="text-block">
-                    <h2>
-                        Subsidiaries 
+                    <h2 id="first_header">
+                        <!-- Subsidiaries  -->
                     </h2>
-                    <p>
-                        <b>LetKnow OÜ</b> is a licensed financial institution, offering innovative solutions for 
-                        storage, processing and exchange of virtual currencies. LetKnow is headquartered in Estonia.
-                    </p>
-                    <p>
-                        The company’s main commercial focus is LetKnow World, which is a group of interconnected 
+                    <div id="fourth_paragraph"></div>
+                    <!-- <p> -->
+                        <!-- <b>LetKnow OÜ</b> is a licensed financial institution, offering innovative solutions for 
+                        storage, processing and exchange of virtual currencies. LetKnow is headquartered in Estonia. -->
+                    <!-- </p> -->
+                    <!-- <p> -->
+                        <!-- The company’s main commercial focus is LetKnow World, which is a group of interconnected 
                         service platforms for financial, social and business activities centered around the use 
                         of cryptocurrencies and legal tender, which allow users to perform various activities 
-                        to fulfill personal and/or business needs.
-                    </p>
-                    <p>
-                        <b>LetKnow HQ</b> is a software development company and supplier of innovative solutions 
+                        to fulfill personal and/or business needs. -->
+                    <!-- </p> -->
+                    <!-- <p> -->
+                        <!-- <b>LetKnow HQ</b> is a software development company and supplier of innovative solutions 
                         for the digital economy. The company is responsible for the inspiration and development 
-                        behind the LetKnow World digital ecosystem run by LetKnow OÜ.
-                    </p>
-                    <p>
-                        The  company is headquartered in Thailand, with remote offices located in Belarus. All 
-                        the intellectual property rights of LetKnow HQ are owned by Galahad Enterprises AG.
-                    </p>
+                        behind the LetKnow World digital ecosystem run by LetKnow OÜ. -->
+                    <!-- </p> -->
+                    <!-- <p> -->
+                        <!-- The  company is headquartered in Thailand, with remote offices located in Belarus. All 
+                        the intellectual property rights of LetKnow HQ are owned by Galahad Enterprises AG. -->
+                    <!-- </p> -->
                 </div>
                 
             </div>
 
             <footer>
                 <div class="footer-line"></div>
-                <p>© 2019 Galahad Enterprises AG.</p>
+                <p id="footer">© 2019 Galahad Enterprises AG.</p>
             </footer>
 
         </div>
 
         <script src="script/jquery.js"></script>
         <script type="text/javascript" src="script/slick.js"></script>
+        <script type="text/javascript" src="script/slider.js"></script>
+        <script type="text/javascript" src="script/i18next.js"></script>
         <script type="text/javascript" src="script/script.js"></script>
 
     </body>

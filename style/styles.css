@@ -172,18 +172,16 @@
 }
 
 .contacts form {
+    min-width: 560px;
+    text-align: center;
     margin: 40px 0;
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0 0 16px #dfdfdf;
 }
 
-.contacts .text-block {
-    margin: auto 0 !important;
-}
-
 .form-field {
-    margin: 18px 0 0;
+    margin: 18px auto;
     width: 480px;
     min-width: 320px;
 }
@@ -192,18 +190,26 @@ form h2 {
     margin-bottom: 28px;
 }
 
-input {
-    padding: 0 8px;
+input, textarea {
+    padding: 16px;
     font-size: 16px;
     height: 32px;
     width: 100%;
+    overflow: hidden;
+    max-width:100%; 
+    border: 1px solid #aaa9a9;
     outline: none;
 }
 
-form .button {
+textarea {
+    height: 120px;
+}
+
+form button {
     border-style: none;
     background-color: #dfdfdf;
-    margin: 24px 0 0;
+    padding: 0;
+    margin: 8px 0 0;
     color: black;
     font-size: 16px;
     font-weight: 600;
@@ -213,12 +219,14 @@ form .button {
     cursor: pointer;
 }
   
-form .button:hover {
+form button:hover {
     box-shadow: 0 0 4px #dfdfdf;
+    outline: none;
 }
 
-form .button:active{
+form button:active, form button:focus {
     box-shadow: 0 0 8px #aaa9a9;
+    outline: none;
 }
 
 .desktop_menu {
@@ -245,10 +253,6 @@ form .button:active{
     margin: 40px 0;
 }
 
-.mobile_menu .lang-switcher a {
-    font-size: 32px !important;
-}
-
 .mobile_menu .lang-switcher img {
     width: 40px;
     height: 40px;
@@ -270,7 +274,7 @@ form .button:active{
 }
 
 .mobile_menu .menu_item{
-    padding: 16px 0;
+    padding: 24px 0;
     margin: auto 0;
 }
 
@@ -283,6 +287,10 @@ form .button:active{
 }
 
 @media screen and (max-width: 1023px) {
+    .slider-image, .slick-list, .slider, .all-slides, .slick-track {
+        height: 400px;
+    }
+
     .desktop_menu, .desktop_menu .items, .logo-area {
         visibility: hidden;  
         width: 0;
@@ -290,17 +298,42 @@ form .button:active{
     }
 
     .content, footer {
-        margin: auto 32px;
+        margin: 32px;
+    }
+
+    .contacts .content {
+        display: block !important;
+            /* поправить */
+    }
+
+    .map {
+        width: 100%;
+    }
+
+    .form-field {
+        width: 100%;
+    }
+
+    #sendForm {
+        
+        text-align: center;
+        margin: 32px auto;
+    }
+
+    footer {
+        text-align: center;
     }
 
     h2 {
         font-size: 28px !important;
         margin-bottom: 24px !important;
+            /* поправить */
     }
 
-    p {
+    .text-block p {
         font-size: 21px !important;
         line-height: 32px !important
+            /* поправить */
     }
 
 }
@@ -326,7 +359,7 @@ a {
     color: black;
 }
 
-.mobile_menu a {
+.mobile_menu p {
     color: white;
 }
 
@@ -334,11 +367,12 @@ a {
     color: white;
 }
 
-.lang-switcher a {
+.mobile_menu .lang-switcher p {
+    font-size: 36px;
     padding: 16px;
 }
 
-.desktop_menu a:hover {
+.desktop_menu  p:hover, .desktop_menu a:hover {
     color: #b91c1c;
 }
 
@@ -348,21 +382,24 @@ a {
 
 .desktop_menu .activeItem {
     color: #b91c1c !important;
+        /* поправить */
 }
 
 .mobile_menu .activeItem {
     color: black !important;
+        /* поправить */
 }
 
 .close_menu_icon {
-    top: 24px;
+    top: 18px;
     position: absolute;
-    right: 24px;
+    right: 18px;
 }
 
 .inactive {
     visibility: hidden !important;
     width: 0 !important;
+        /* поправить */
 }
 
 .lang-switcher {
@@ -402,6 +439,7 @@ a {
     flex-direction: column;
     align-items: center;
     padding: 4px;
+    margin-top: -18px;
 }
 
 .active {
@@ -446,6 +484,6 @@ p {
 }
 
 footer {
-    margin-top: 32px;
+    margin-top: 80px;
     margin-bottom: 32px;
 }

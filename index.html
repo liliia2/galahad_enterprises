@@ -11,7 +11,7 @@
         <link rel="stylesheet" type="text/css" href="style/slick-theme.css"/>
     </head>
 
-    <body>
+    <body id="all_content">
 
         <div class="mobile-header">
             <div class="logo">
@@ -26,7 +26,6 @@
                     style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#b91c1c"><path d="M0,14.33333v14.33333h172v-14.33333zM0,78.83333v14.33333h172v-14.33333zM0,143.33333v14.33333h172v-14.33333z"></path></g></g>
                 </svg>
             </div>
-            
         </div>
 
         <div class="slider">
@@ -106,86 +105,93 @@
             <div class="mobile_menu inactive">
                 <div class="close_menu_icon" onclick="closeMenu()">
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                        width="48" height="48"
+                        width="64" height="64"
                         viewBox="0 0 172 172"
                         style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M33.73372,23.59961l-10.13411,10.13411l52.26628,52.26628l-52.26628,52.26628l10.13411,10.13411l52.26628,-52.26628l52.26628,52.26628l10.13411,-10.13411l-52.26628,-52.26628l52.26628,-52.26628l-10.13411,-10.13411l-52.26628,52.26628z"></path></g></g>
                     </svg>
                 </div>
                 <div class="items">
-                    <div class="menu_item"><a class="activeItem" href="./index.html">ABOUT</a></div>
-                    <div class="menu_item"><a href="./subsidiaries.html">SUBSIDIARIES</a></div>
-                    <div class="menu_item"><a href="./investors.html">INVESTORS</a></div>
-                    <div class="menu_item"><a href="./contact_us.html">CONTACT US</a></div>
+                    <div class="menu_item"><a class="activeItem" id="menu_about_mobile" href="./index.html">ABOUT</a></div>
+                    <div class="menu_item"><a id="menu_subsidiaries_mobile" href="./subsidiaries.html">SUBSIDIARIES</a></div>
+                    <div class="menu_item"><a id="menu_investors_mobile" href="./investors.html">INVESTORS</a></div>
+                    <div class="menu_item"><a id="menu_contactus_mobile" href="./contact_us.html">CONTACT US</a></div>
                     <div class="lang-switcher" >
                         <img src="https://img.icons8.com/ios-glyphs/30/000000/globe-earth.png">
-                        <p onclick="chooseLang()"><a href="#" class="activeItem">EN</a></p>
-                        <p onclick="chooseLang()"><a href="#">DE</a></p>
-                    </div>                
-                </div>
+                        <p onclick="changeLng('DE')" class="activeItem deutsch_lang">DE</p>
+                        <p onclick="changeLng('EN')" class="eng_lang">EN</p>
+                    </div>
+                </div>                
             </div>
 
             <div class="desktop_menu">
                 <div class="items">
-                    <div class="menu_item"><a class="activeItem" href="./index.html">ABOUT</a></div>
-                    <div class="menu_item"><a href="./subsidiaries.html">SUBSIDIARIES</a></div>
-                    <div class="menu_item"><a href="./investors.html">INVESTORS</a></div>
-                    <div class="menu_item"><a href="./contact_us.html">CONTACT US</a></div>
+                    <div class="menu_item"><a class="activeItem" id="menu_about_desktop" href="./index.html">ABOUT</a></div>
+                    <div class="menu_item"><a id="menu_subsidiaries_desktop" href="./subsidiaries.html">SUBSIDIARIES</a></div>
+                    <div class="menu_item"><a id="menu_investors_desktop" href="./investors.html">INVESTORS</a></div>
+                    <div class="menu_item"><a id="menu_contactus_desktop" href="./contact_us.html">CONTACT US</a></div>
                     <div class="lang-switcher" >
                         <img src="https://img.icons8.com/ios-glyphs/30/000000/globe-earth.png" onclick="openLangMenu()">
-                        <span class="current_lang" onclick="openLangMenu()">EN</span>
+                        <span class="current_lang" onclick="openLangMenu()"></span>
                         <div class="drop-block">
-                            <p onclick="closeLangMenu()"><a href="#" class="current">EN</a></p>
-                            <p onclick="closeLangMenu()"><a href="#">DE</a></p>
+                            <p onclick="changeLng('DE')" class="activeItem deutsch_lang">DE</p>
+                            <p onclick="changeLng('EN')" class="eng_lang">EN</p>
                         </div>
                     </div>                
                 </div>
             </div>
 
             <div class="content">
-                
-                <div class="text-block">
-                    <h2>
-                        About 
-                    </h2>
-                    <p>
-                        Galahad Enterprises AG was founded in 2012. The main purpose of the company is the 
+
+                <div class="text-block" id="first_paragraph">
+                    <!-- <h2> -->
+                        <!-- About  -->
+                    <!-- </h2> -->
+                    <!-- <p> -->
+                        <!-- Galahad Enterprises AG was founded in 2012. The main purpose of the company is the 
                         development and implementation of innovative solutions in the FinTech industry. 
-                        The company is registered in the Canton of Zurich.
-                    </p>
+                        The company is registered in the Canton of Zurich. -->
+                    <!-- </p> -->
                 </div>
 
-                <div class="text-block">
-                    <h2>
-                        Mission 
-                    </h2>
-                    <p>
-                        Make the use of advanced technical solutions on blockchain technology universal 
-                        and widespread, bringing human society closer to financial freedmo. 
-                    </p>
+                <div class="text-block" id="second_paragraph">
+                    <!-- <h2> -->
+                        <!-- Mission  -->
+                    <!-- </h2> -->
+                    <!-- <p> -->
+                        <!-- Make the use of advanced technical solutions on blockchain technology universal 
+                        and widespread, bringing human society closer to financial freedmo.  -->
+                    <!-- </p> -->
                 </div>
                 
-                <div class="text-block">
-                    <h2>
-                        Goal 
-                    </h2>
-                    <p>
-                        To create the next-generation digital ecosystem for enhanced socio-economic 
-                        collaboration through the use and benefit of cryptocurrecnies.
-                    </p>
+                <div class="text-block" id="third_paragraph">
+                    <!-- <h2> -->
+                        <!-- Goal  -->
+                    <!-- </h2> -->
+                    <!-- <p> -->
+                        <!-- To create the next-generation digital ecosystem for enhanced socio-economic 
+                        collaboration through the use and benefit of cryptocurrecnies. -->
+                    <!-- </p> -->
                 </div>
                 
             </div>
 
             <footer>
                 <div class="footer-line"></div>
-                <p>© 2019 Galahad Enterprises AG.</p>
+                <p id="footer">© 2019 Galahad Enterprises AG.</p>
             </footer>
 
         </div>
 
         <script src="script/jquery.js"></script>
         <script type="text/javascript" src="script/slick.js"></script>
+        <script type="text/javascript" src="script/slider.js"></script>
+        <script type="text/javascript" src="script/i18next.js"></script>
         <script type="text/javascript" src="script/script.js"></script>
+        
+
+        <!-- <script src="https://unpkg.com/i18next/i18next.js"></script> -->
+        <!-- <script src="https://unpkg.com/i18next-xhr-backend/i18nextXHRBackend.js"></script> -->
+        <!-- <script src="https://unpkg.com/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.js"></script> -->
 
     </body>
 </html>
