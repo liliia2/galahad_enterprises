@@ -177,8 +177,7 @@ function findElementById(id) {
 function changeLng(lng) {
     document.getElementsByClassName('current_lang')[0].innerHTML = lng;
     console.log('window.location.href 1 = ', window.location, window.location.href); 
-    window.location.href = window.location.href.split('/');
-    console.log('Now window.location.href 2 = ', window.location.href);
+    console.log('Now window.location.href 2 = ', window.location.href.split('/'));
     if (lng === "EN" && document.getElementsByClassName('eng_lang')[0].classList.value === "eng_lang") {
         document.getElementsByClassName('eng_lang')[0].classList.add('activeItem'); 
         document.getElementsByClassName('eng_lang')[1].classList.add('activeItem'); 
