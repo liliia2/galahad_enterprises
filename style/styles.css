@@ -235,12 +235,12 @@ form button:active, form button:focus {
 
 @media screen and (min-width: 1024px) {
     .mobile_menu {
-        visibility: hidden;
+        display: none;
         height: 0;
     }
 
     .mobile-header {
-        visibility: hidden;  
+        display: none;
         width: 0;
         height: 0;
     }
@@ -270,7 +270,7 @@ form button:active, form button:focus {
         display: flex;
         justify-content: center;
         align-items: center; 
-        font-size: 28px;
+        font-size: 24px;
     }
 
     .mobile-header {
@@ -294,6 +294,26 @@ form button:active, form button:focus {
         margin: auto 16px;
     }
 
+    .mobile_menu a {
+        color: white;
+    }
+
+    .mobile_menu a:hover {
+        color: black;
+    }
+
+    .mobile_menu p {
+        color: white;
+    }
+
+    .mobile_menu a:visited {
+        color: white;
+    }
+
+    .mobile_menu .lang-switcher p {
+        font-size: 28px;
+        padding: 16px;
+    }
 
     .mobile_menu .activeItem, .mobile_menu .activeItem a {
         color: black !important;
@@ -368,25 +388,8 @@ a {
     color: black;
 }
 
-.mobile_menu p {
-    color: white;
-}
-
-.mobile_menu a:visited {
-    color: white;
-}
-
-.mobile_menu .lang-switcher p {
-    font-size: 32px;
-    padding: 16px;
-}
-
 .desktop_menu  p:hover, .desktop_menu a:hover {
     color: #b91c1c;
-}
-
-.mobile_menu a:hover {
-    color: black;
 }
 
 .desktop_menu .activeItem a {
