@@ -45,22 +45,6 @@
     align-items: flex-end;
 }
 
-.slide1 .slider-image {
-    background-image: url("../img/view_one.jpg");
-}
-
-.slide2 .slider-image {
-    background-image: url("../img/view_two.jpg");
-}
-
-.slide3 .slider-image {
-    background-image: url("../img/view_three.jpg");
-}
-
-.slide4 .slider-image {
-    background-image: url("../img/view_four.jpg");
-}
-
 .nav-wrapper {
     display: flex;
     flex-direction: row;
@@ -204,12 +188,12 @@ form button:active, form button:focus {
 }
 
 .mobile_menu .lang-switcher {
-    margin: 40px 0;
+    margin: 16px 0;
 }
 
 .mobile_menu .lang-switcher img {
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     margin: auto;
 }
 
@@ -233,6 +217,22 @@ form button:active, form button:focus {
 }
 
 @media screen and (min-width: 1024px) {
+    .slide1 .slider-image {
+        background-image: url("../img/view_one.jpg");
+    }
+    
+    .slide2 .slider-image {
+        background-image: url("../img/view_two.jpg");
+    }
+    
+    .slide3 .slider-image {
+        background-image: url("../img/view_three.jpg");
+    }
+    
+    .slide4 .slider-image {
+        background-image: url("../img/view_four.jpg");
+    }
+
     .mobile_menu {
         display: none;
         height: 0;
@@ -259,9 +259,42 @@ form button:active, form button:focus {
 }
 
 @media screen and (max-width: 1023px) {
-    /* body {
-        overflow: hidden;
-    } */
+
+    .slide1 .slider-image {
+        background-image: url("../img/1-min.jpg");
+    }
+    
+    .slide2 .slider-image {
+        background-image: url("../img/2-min.jpg");
+    }
+    
+    .slide3 .slider-image {
+        background-image: url("../img/3-min.jpg");
+    }
+    
+    .slide4 .slider-image {
+        background-image: url("../img/4-min.jpg");
+    }
+
+
+
+    .slider, .all-slides {
+        height: 100% !important;
+    }
+    
+    .slide1, .slide2, .slide3, .slide4 {
+        height: 100%;
+    }
+    
+    .slider-image {
+        height: 100%;
+    }
+
+    .slider-image, .slick-list, .slider, .all-slides, .slick-track {
+        height: 180px;
+    }
+
+
 
     .mobile_menu {
         background-color: #b91c1c;
@@ -275,7 +308,7 @@ form button:active, form button:focus {
         display: flex;
         justify-content: center;
         align-items: center; 
-        font-size: 24px;
+        font-size: 21px;
     }
 
     .mobile-header {
@@ -316,16 +349,12 @@ form button:active, form button:focus {
     }
 
     .mobile_menu .lang-switcher p {
-        font-size: 28px;
+        font-size: 21px;
         padding: 16px;
     }
 
     .mobile_menu .activeItem, .mobile_menu .activeItem a {
         color: black !important;
-    }
-
-    .slider-image, .slick-list, .slider, .all-slides, .slick-track {
-        height: 400px;
     }
 
     .desktop_menu, .desktop_menu .items, .logo-area {
