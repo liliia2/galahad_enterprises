@@ -153,7 +153,6 @@
 .form-field {
     margin: 18px auto;
     width: 480px;
-    min-width: 320px;
 }
 
 form h2 {
@@ -254,14 +253,20 @@ form button:active, form button:focus {
         box-shadow: 0 0 16px #dfdfdf;
     }
 
+    .form-field {
+        min-width: 320px;
+    }
 }
 
 @media screen and (max-width: 1023px) {
+    /* body {
+        overflow: hidden;
+    } */
 
     .mobile_menu {
         background-color: #b91c1c;
         display: flow-root;
-        visibility: hidden;  
+        display: none;  
         position: absolute;
         top: 0;
         left: 0;
@@ -287,7 +292,7 @@ form button:active, form button:focus {
     }
 
     .mobile-header .logo {
-        margin: 4px 16px;
+        margin: auto 16px;
     }
 
     .menu-icon {
@@ -324,7 +329,7 @@ form button:active, form button:focus {
     }
 
     .desktop_menu, .desktop_menu .items, .logo-area {
-        visibility: hidden;  
+        display: none;
         width: 0;
         height: 0;
     }
@@ -346,7 +351,6 @@ form button:active, form button:focus {
     }
 
     #sendForm {
-        
         text-align: center;
         margin: 32px auto;
     }
@@ -363,6 +367,10 @@ form button:active, form button:focus {
     .text-block p {
         font-size: 21px !important;
         line-height: 32px !important
+    }
+
+    .form-field {
+        min-width: 100%;
     }
 
 }
@@ -407,7 +415,7 @@ a {
 }
 
 .inactive {
-    visibility: hidden !important;
+    display: none !important;
     width: 0 !important;
 }
 
@@ -452,7 +460,7 @@ a {
 }
 
 .active {
-    visibility: visible ;
+    visibility: visible;
     opacity: 1 ;
     padding-top: -10px;
 }
