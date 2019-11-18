@@ -233,9 +233,11 @@ form button:active, form button:focus {
     margin: auto 0;
 }
 
-
-
 @media screen and (min-width: 1024px) {
+    .mobile_menu {
+        visibility: hidden;
+        height: 0;
+    }
 
     .mobile-header {
         visibility: hidden;  
