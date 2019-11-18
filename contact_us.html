@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="DE">
     <head>
         <meta charset="UTF-8">
-        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
-        <!-- <meta name="viewport" content="minimal-ui, user-scalable=no, width=device-width, initial-scale=1"> -->
+        <meta name="viewport" content="minimal-ui, user-scalable=no, width=device-width, initial-scale=1">
         <title>Galahad enterprises</title>
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="style/styles.css">
@@ -110,30 +109,30 @@
                     </svg>
                 </div>
                 <div class="items">
-                    <div class="menu_item"><a id="menu_about_mobile" href="./index.html">ABOUT</a></div>
-                    <div class="menu_item"><a id="menu_subsidiaries_mobile" href="./subsidiaries.html">SUBSIDIARIES</a></div>
-                    <div class="menu_item"><a id="menu_investors_mobile" href="./investors.html">INVESTORS</a></div>
-                    <div class="menu_item"><a class="activeItem" id="menu_contactus_mobile" href="./contact_us.html">CONTACT US</a></div>
+                    <div class="menu_item"><a href="./index.html">ABOUT</a></div>
+                    <div class="menu_item"><a href="./subsidiaries.html">SUBSIDIARIES</a></div>
+                    <div class="menu_item"><a href="./investors.html">INVESTORS</a></div>
+                    <div class="menu_item"><a class="activeItem" href="./contact_us.html">CONTACT US</a></div>
                     <div class="lang-switcher" >
                         <img src="https://img.icons8.com/ios-glyphs/30/000000/globe-earth.png">
-                        <p onclick="changeLng('DE')" class="activeItem deutsch_lang">DE</p>
-                        <p onclick="changeLng('EN')" class="eng_lang">EN</p>
+                        <p onclick="changeLng('DE')" class="activeItem"><a href="#">DE</a></p>
+                        <p onclick="changeLng('EN')"><a href="./en/contact_us.html">EN</a></p>
                     </div>                
                 </div>
             </div>
 
             <div class="desktop_menu">
                 <div class="items">
-                    <div class="menu_item"><a id="menu_about_desktop" href="./index.html">ABOUT</a></div>
-                    <div class="menu_item"><a id="menu_subsidiaries_desktop" href="./subsidiaries.html">SUBSIDIARIES</a></div>
-                    <div class="menu_item"><a id="menu_investors_desktop" href="./investors.html">INVESTORS</a></div>
-                    <div class="menu_item"><a class="activeItem" id="menu_contactus_desktop" href="./contact_us.html">CONTACT US</a></div>
+                    <div class="menu_item"><a href="./index.html">ABOUT</a></div>
+                    <div class="menu_item"><a href="./subsidiaries.html">SUBSIDIARIES</a></div>
+                    <div class="menu_item"><a href="./investors.html">INVESTORS</a></div>
+                    <div class="menu_item"><a class="activeItem" href="./contact_us.html">CONTACT US</a></div>
                     <div class="lang-switcher" >
                         <img src="https://img.icons8.com/ios-glyphs/30/000000/globe-earth.png" onclick="openLangMenu()">
-                        <span class="current_lang" onclick="openLangMenu()"></span>
+                        <span class="current_lang" onclick="openLangMenu()">DE</span>
                         <div class="drop-block">
-                            <p onclick="changeLng('DE')" class="activeItem deutsch_lang">DE</p>
-                            <p onclick="changeLng('EN')" class="eng_lang">EN</p>
+                            <p onclick="changeLng('DE')" class="activeItem"><a href="#">DE</a></p>
+                            <p onclick="changeLng('EN')"><a href="./en/contact_us.html">EN</a></p>
                         </div>
                     </div>                
                 </div>
@@ -141,8 +140,8 @@
 
             <div class="content">
                 <div class="text-block">
-                    <h2 id="third_header">
-                        <!-- Contact Us  -->
+                    <h2>
+                        Contact Us 
                     </h2>
                     <p class="small_p">
                         Galahad Enterprises AG
@@ -158,19 +157,19 @@
 
                 <form id="sendForm" method="POST">
 
-                    <h2 id="fourth_header">
-                        <!-- Write Us Now -->
+                    <h2>
+                        Write Us Now
                     </h2>
 
-                    <div class="form-field" id="form_email">
+                    <div class="form-field">
                         <input type='email' name='email' placeholder='Your e-mail*' required>
                     </div>
 
-                    <div class="form-field" id="form_subject">
+                    <div class="form-field">
                         <input type='text' name='subject' placeholder='Subject'>
                     </div>
 
-                    <div class="form-field messageText" id="form_message">
+                    <div class="form-field messageText">
                         <textarea type='text' maxlength="600" name='message' placeholder='Type your message*' required></textarea>
                     </div>
                     
@@ -182,7 +181,7 @@
 
             <footer>
                 <div class="footer-line"></div>
-                <p id="footer">© 2019 Galahad Enterprises AG.</p>
+                <p>© 2019 Galahad Enterprises AG.</p>
             </footer>
 
         </div>
@@ -190,8 +189,6 @@
         <script src="script/jquery.js"></script>
         <script type="text/javascript" src="script/slick.js"></script>
         <script type="text/javascript" src="script/slider.js"></script>
-        <script type="text/javascript" src="script/i18next.js"></script>
-        <script type="text/javascript" src="script/validate.js"></script>
         <script type="text/javascript" src="script/script.js"></script>
 
     </body>

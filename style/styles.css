@@ -380,7 +380,7 @@ a {
     color: black;
 }
 
-.desktop_menu .activeItem {
+.desktop_menu .activeItem a {
     color: #b91c1c !important;
         /* поправить */
 }
