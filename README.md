@@ -1,1 +1,1 @@
-Website https://galahad.netlify.com/
+Website https://galahadenterprises.com/
